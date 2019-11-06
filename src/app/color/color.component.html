@@ -1,0 +1,10 @@
+<p>color works!</p>
+
+<div>
+  <label>Chọn màu</label>
+<input type="color" [value]="background" (change)="onChangeColor($event.target.value)" >
+</div>
+<div>
+<p>Output: </p>
+  <div class="color-preview" [style.background]="background" ></div>
+</div>
